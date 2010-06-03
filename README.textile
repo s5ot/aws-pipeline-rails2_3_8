@@ -1,6 +1,7 @@
 h1. aws-pipeline-rails2_3_8
 
-Processing Pipeline with Amazon S3, SQS, EC2, Ruby, Rails and ActiveMessaging(http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1151)のRails2.3.8バージョン
+『Processing Pipeline with Amazon S3, SQS, EC2, Ruby, Rails and ActiveMessaging』のRails2.3.8バージョン
+* http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1151
 * オリジナルはRails2.0.2
 * オリジナルではファイルアップロードにattachement_fuを使っているが、paperclipに置き換えた
 
