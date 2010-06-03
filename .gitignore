@@ -1,0 +1,5 @@
+log/*.log
+tmp/**/*
+doc/**/*
+config/amazon_s3.yml
+config/broker.yml

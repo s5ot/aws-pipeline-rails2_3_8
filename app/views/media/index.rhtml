@@ -1,0 +1,27 @@
+<!--
+Copyright 2007 Amazon Technologies, Inc.  Licensed under the Apache License, Version 2.0 (the "License"); 
+you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+http://aws.amazon.com/apache2.0
+
+This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+See the License for the specific language governing permissions and limitations under the License.
+-->
+<h2>AWS Processing Pipeline - Input Jobs</h2>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<p><%= link_to "View Pipeline Jobs", :action => "jobs" %></p>
+
+<%= error_messages_for :media %>
+
+<p>Select a JPEG image to upload and watermark with "Amazon Web Services"</p>
+
+<% form_for :media, :url => { :action => "submit_job" }, :html => { :multipart => true } do |f| %>
+  <p>
+    <%= f.file_field :media %>
+  </p>
+  <p>
+    <%= submit_tag 'Upload Media and Submit Job' %>
+  </p>
+<% end -%>
