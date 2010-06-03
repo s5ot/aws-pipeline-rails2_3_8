@@ -1,10 +1,10 @@
 h1. aws-pipeline-rails2_3_8
 
 Processing Pipeline with Amazon S3, SQS, EC2, Ruby, Rails and ActiveMessaging(http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1151)のRails2.3.8バージョン
-※オリジナルはRails2.0.2
-※オリジナルではファイルアップロードにattachement_fuを使っているが、paperclipに置き換えた
+* オリジナルはRails2.0.2
+* オリジナルではファイルアップロードにattachement_fuを使っているが、paperclipに置き換えた
 
-h2. 環境
+h2. Environment
 * Rails 2.3.8
 * Ruby 1.8.7（NOTICE：1.9.xだとactive_messagingでasqsにpublishするときにSignatureDoesNotMatchが発生する。文字列の扱いの問題と思われる）
 
@@ -22,7 +22,7 @@ script/poller run &
 ./watermarker.rb &
 </pre>
 
-h2. パッチ
+h2. Patch
 * paperclipのパッチ
 http://github.com/dwalters/paperclip/commit/2a85add5f102db8773518f8ac30f7e2337bf7d13
 
